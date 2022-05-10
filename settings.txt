@@ -1,9 +1,9 @@
 COLOR
-main_frame_color -1
+main_frame_color -16777216
 main_frame_bar_color -16711936
 error_msg_color -65536
-matrix_frame_color -1
-matrix_oper_frame_color -1
+matrix_frame_color -16777216
+matrix_oper_frame_color -16777216
 output_color -16711681
 calc_bg_color -3617567
 btn_bg_color -256
