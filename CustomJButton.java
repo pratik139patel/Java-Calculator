@@ -1,4 +1,4 @@
-package JavaCalculator;
+package Java_Calculator;
 
 import java.awt.Graphics;
 import javax.swing.JButton;

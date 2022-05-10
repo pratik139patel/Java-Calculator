@@ -1,4 +1,4 @@
-package JavaCalculator;
+package Java_Calculator;
 
 import javax.swing.JTextField;
 import java.awt.FontMetrics;

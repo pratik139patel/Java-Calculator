@@ -1,4 +1,4 @@
-package JavaCalculator;
+package Java_Calculator;
 
 import javax.swing.JTextField;
 import javax.swing.event.ChangeEvent;
@@ -2449,7 +2449,7 @@ public class Calculator
                 file_input_line = in.nextLine();
 
                 //If temp contains COLOR or it is blank, then move to the next line as it is just a heading
-                if(file_input_line.isBlank() || file_input_line.contains("COLOR")) { continue; }
+                if(file_input_line.isEmpty() || file_input_line.contains("COLOR")) { continue; }
 
                 //If temp contains FONT or PRECISION, then move to the next line as it is just a heading after incrementing case_state and setting count to 0 (first location in the array)
                 if(file_input_line.contains("FONT") || file_input_line.contains("PRECISION")|| file_input_line.contains("BUTTON")) 
@@ -4767,7 +4767,7 @@ public class Calculator
                 for(int j = 0; j < matrix_oper_frame_user_field_arr[0].length; ++j) 
                 {
                     //Set all the blank inputs to zero
-                    temp_matrix[i][j] = Double.parseDouble( (matrix_oper_frame_user_field_arr[i][j].getText().isBlank()) ? ("0") : (matrix_oper_frame_user_field_arr[i][j].getText()) ); 
+                    temp_matrix[i][j] = Double.parseDouble( (matrix_oper_frame_user_field_arr[i][j].getText().isEmpty()) ? ("0") : (matrix_oper_frame_user_field_arr[i][j].getText()) ); 
                 } 
             }
         }

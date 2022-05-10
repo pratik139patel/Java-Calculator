@@ -1,4 +1,4 @@
-package JavaCalculator;
+package Java_Calculator;
 
 //Matrix class designed to perform various matrix operations
 public class Matrix 
