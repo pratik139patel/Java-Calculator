@@ -1,4 +1,4 @@
-import Java_Calculator.Calculator;
+import JavaCalculator.Calculator;
 
 public class Run 
 {

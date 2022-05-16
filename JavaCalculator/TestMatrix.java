@@ -1,4 +1,4 @@
-package Java_Calculator;
+package JavaCalculator;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 import java.util.Random;
