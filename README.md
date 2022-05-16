@@ -4,7 +4,7 @@
 - Ubuntu 20.04.1 LTS
 
 
-## Calculator Image:
+## Calculator Screen-Shot:
 <p align="center">
     <img src="https://github.com/pratik139patel/Java-Calculator/blob/master/img/calculator-screenshot.jpeg">
 </p>
