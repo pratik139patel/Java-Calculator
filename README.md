@@ -6,5 +6,5 @@
 
 ## Calculator Image:
 <p align="center">
-    <img src="https://github.com/pratik139patel/Java-Calculator/blob/master/Images/calculator-screenshot.jpeg">
+    <img src="https://github.com/pratik139patel/Java-Calculator/blob/master/img/calculator-screenshot.jpeg">
 </p>
