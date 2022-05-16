@@ -1,4 +1,4 @@
-package JavaCalculator;
+package src;
 
 import javax.swing.JTextField;
 import javax.swing.event.ChangeEvent;
