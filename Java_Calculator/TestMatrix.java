@@ -1,9 +1,8 @@
+package Java_Calculator;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 import java.util.Random;
 import org.junit.Test;
-
-import Java_Calculator.Matrix;
 
 public class TestMatrix 
 {
