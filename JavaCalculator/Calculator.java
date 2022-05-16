@@ -212,7 +212,7 @@ public class Calculator
     {
         //Create a new frame and set the image icon
         main_frame = new JFrame("Main Menu"); 
-        main_frame.setIconImage(new ImageIcon("Images/pratik-patel.jpg").getImage());
+        main_frame.setIconImage(new ImageIcon("Images/pratik-patel.jpeg").getImage());
 
         //Create a meny bar for the main frame, and set the layout of the main frame
         main_frame_bar = new JMenuBar();
