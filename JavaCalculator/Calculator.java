@@ -687,7 +687,8 @@ public class Calculator
                 int temp_btn_arc_width = Integer.parseInt(button_layout_frame_arc_width_field.getText());
 
                 if((btn_arc_height != temp_btn_arc_height || btn_arc_width != temp_btn_arc_width) && 
-                   JOptionPane.showOptionDialog(null, "Do you want to re-deploy the application for better results?", "Re-launch Prompt", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null) == JOptionPane.YES_OPTION)
+                   JOptionPane.showOptionDialog(null, "Do you want to re-deploy the application for better results?", "Re-launch Prompt", 
+                        JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null) == JOptionPane.YES_OPTION)
                 {
                     main_frame_app_redeploy_menu_item.doClick();
                 }
@@ -711,10 +712,8 @@ public class Calculator
                 button_layout_frame_arc_width_field.setText(Integer.toString(btn_arc_width));
 
                 if((btn_arc_height != temp_btn_arc_height || btn_arc_width != temp_btn_arc_width) && 
-                   JOptionPane.showOptionDialog(null, "Do you want to re-deploy the application for better results?", "Re-launch Prompt", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null) == JOptionPane.YES_OPTION)
-                {
-                    main_frame_app_redeploy_menu_item.doClick();
-                }
+                   JOptionPane.showOptionDialog(null, "Do you want to re-deploy the application for better results?", "Re-launch Prompt", 
+                        JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null) == JOptionPane.YES_OPTION) { main_frame_app_redeploy_menu_item.doClick(); }
                 
                 create_save_setting_file(); 
             } 
@@ -847,7 +846,8 @@ public class Calculator
     {
         if(button_layout_frame != null)
         {
-            try { button_layout_frame_arc_height_label.setForeground(button_layout_frame_arc_height_dec_btn.getInvertedColor(color_arr[17], 100, 155, false)); } catch(Exception ex) { return; }
+            try { button_layout_frame_arc_height_label.setForeground(button_layout_frame_arc_height_dec_btn.getInvertedColor(color_arr[17], 100, 155, false)); } 
+            catch(Exception ex) { return; }
             button_layout_frame_arc_width_label.setForeground(button_layout_frame_arc_height_label.getForeground());
             button_layout_frame_preview_label.setForeground(button_layout_frame_arc_height_label.getForeground());
         }
@@ -856,7 +856,10 @@ public class Calculator
     /**
      * Set the bg color of the precision menu frame
      */
-    protected void set_button_layout_frame_color() { if(button_layout_frame != null) { button_layout_frame.getContentPane().setBackground(color_arr[17]); } }
+    protected void set_button_layout_frame_color() 
+    { 
+        if(button_layout_frame != null) { button_layout_frame.getContentPane().setBackground(color_arr[17]); } 
+    }
 
     /**
      * Set set font of the button and labels on the precision menu
@@ -1273,7 +1276,8 @@ public class Calculator
     {
         if(precision_frame != null)
         {
-            try { precision_frame_precision_label.setForeground(precision_frame_inc_btn.getInvertedColor(color_arr[16], 100, 155, false)); } catch(Exception ex) { return; }
+            try { precision_frame_precision_label.setForeground(precision_frame_inc_btn.getInvertedColor(color_arr[16], 100, 155, false)); } 
+            catch(Exception ex) { return; }
         }
     }
 
@@ -1645,10 +1649,8 @@ public class Calculator
             public void actionPerformed(ActionEvent e) 
             { 
                 dispose_font_frame();
-                if(JOptionPane.showOptionDialog(null, "Do you want to re-deploy the application for better results?", "Re-launch Prompt", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null) == JOptionPane.YES_OPTION)
-                {
-                    main_frame_app_redeploy_menu_item.doClick();
-                }
+                if(JOptionPane.showOptionDialog(null, "Do you want to re-deploy the application for better results?", "Re-launch Prompt", JOptionPane.YES_NO_OPTION, 
+                    JOptionPane.QUESTION_MESSAGE, null, null, null) == JOptionPane.YES_OPTION) { main_frame_app_redeploy_menu_item.doClick(); }
                 create_save_setting_file(); 
             } 
         });
@@ -1966,10 +1968,8 @@ public class Calculator
         {
             restore_font_settings();
 
-            if(JOptionPane.showOptionDialog(null, "Do you want to re-deploy the application for better results?", "Re-launch Prompt", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null) == JOptionPane.YES_OPTION)
-            {
-                main_frame_app_redeploy_menu_item.doClick();
-            }
+            if(JOptionPane.showOptionDialog(null, "Do you want to re-deploy the application for better results?", "Re-launch Prompt", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null) 
+                == JOptionPane.YES_OPTION) { main_frame_app_redeploy_menu_item.doClick(); }
             else
             {
                 //Reset all the fonts in Choose Font menu
@@ -2700,7 +2700,8 @@ public class Calculator
                 color_frame_red_field.setDisabledBackgroundColor(new Color(((JSlider)e.getSource()).getValue(),0,0)); 
                 color_frame_red_field.setText(Integer.toString(((JSlider)e.getSource()).getValue()));
                 //Set the bg color of total field with current red, green, and blue values
-                color_frame_total_field.setDisabledBackgroundColor(new Color(((JSlider)e.getSource()).getValue(), color_frame_total_field.getDisabledBackgroundColor().getGreen(), color_frame_total_field.getDisabledBackgroundColor().getBlue()));
+                color_frame_total_field.setDisabledBackgroundColor(new Color(((JSlider)e.getSource()).getValue(), color_frame_total_field.getDisabledBackgroundColor().getGreen(), 
+                    color_frame_total_field.getDisabledBackgroundColor().getBlue()));
                 color_frame_total_field.repaint();
             } 
         });
@@ -2714,7 +2715,8 @@ public class Calculator
                 color_frame_green_field.setDisabledBackgroundColor(new Color(0,((JSlider)e.getSource()).getValue(),0)); 
                 color_frame_green_field.setText(Integer.toString(((JSlider)e.getSource()).getValue()));
                 //Set the bg color of total field with current red, green, and blue values
-                color_frame_total_field.setDisabledBackgroundColor(new Color(color_frame_total_field.getDisabledBackgroundColor().getRed(), ((JSlider)e.getSource()).getValue(), color_frame_total_field.getDisabledBackgroundColor().getBlue()));
+                color_frame_total_field.setDisabledBackgroundColor(new Color(color_frame_total_field.getDisabledBackgroundColor().getRed(), ((JSlider)e.getSource()).getValue(), 
+                    color_frame_total_field.getDisabledBackgroundColor().getBlue()));
                 color_frame_total_field.repaint();
             } 
         });
@@ -2728,7 +2730,8 @@ public class Calculator
                 color_frame_blue_field.setDisabledBackgroundColor(new Color(0,0,((JSlider)e.getSource()).getValue())); 
                 color_frame_blue_field.setText(Integer.toString(((JSlider)e.getSource()).getValue()));
                 //Set the bg color of total field with current red, green, and blue values
-                color_frame_total_field.setDisabledBackgroundColor(new Color(color_frame_total_field.getDisabledBackgroundColor().getRed(), color_frame_total_field.getDisabledBackgroundColor().getGreen(), ((JSlider)e.getSource()).getValue())); 
+                color_frame_total_field.setDisabledBackgroundColor(new Color(color_frame_total_field.getDisabledBackgroundColor().getRed(), 
+                    color_frame_total_field.getDisabledBackgroundColor().getGreen(), ((JSlider)e.getSource()).getValue())); 
                 color_frame_total_field.repaint();
             } 
         });
@@ -3438,7 +3441,8 @@ public class Calculator
     {
         if(color_frame != null)
         {
-            try { color_frame_red_slider.setForeground(color_frame_main_frame_color_btn.getInvertedColor(color_frame.getContentPane().getBackground(), 100, 155, false)); } catch(Exception ex) { return; }
+            try { color_frame_red_slider.setForeground(color_frame_main_frame_color_btn.getInvertedColor(color_frame.getContentPane().getBackground(), 100, 155, false)); } 
+            catch(Exception ex) { return; }
             color_frame_green_slider.setForeground(color_frame_red_slider.getForeground());
             color_frame_blue_slider.setForeground(color_frame_red_slider.getForeground());
         }

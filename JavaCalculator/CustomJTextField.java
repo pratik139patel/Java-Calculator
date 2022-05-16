@@ -126,7 +126,8 @@ public class CustomJTextField extends JTextField
      * @param lowWhiteThreshold Low Threshold of the range which causes white color to be returned if all the RGB intensity lies within the range
      * @param highWhiteThreshold High Threshold of the range which causes white color to be returned if all the RGB intensity lies within the range
      * @param blackOrWhiteFlag Returns only black or white color. Black if it lies outside the range [low, high], otherwise white color is returned
-     * @return White color if all RGB intensity lies between and including [low, high], otherwise returns complementary color to BG color if blackOrWhiteFlag is false or just white or black if blackOrWhiteFlag is true
+     * @return White color if all RGB intensity lies between and including [low, high], otherwise returns complementary color to BG color if 
+     *         blackOrWhiteFlag is false or just white or black if blackOrWhiteFlag is true
      * @throws Exception Throws exception if lowWhiteThreshold < 0 or highWhiteThreshold > 255 or lowWhiteThreshold > highWhiteThreshold
      */
     public Color getInvertedColor(final Color bgColor, final int lowWhiteThreshold, final int highWhiteThreshold, final boolean blackOrWhiteFlag) throws Exception
